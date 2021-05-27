@@ -3,6 +3,7 @@ const ipfsHttpClient = require('ipfs-http-client')
 async function main() {
     // const client = await ipfsHttpClient.create({url: 'http://localhost:5011'})
     const client = ipfsHttpClient({url: 'http://localhost:5011'})
+    // CHANGE PubKey HERE
     const remote = '/ip4/127.0.0.1/tcp/4012/ws/p2p/QmQr6mz3EGjoJWe1MwqweUz7DCxdXJyuUqLWfs14ranAJ1'
     await client.swarm.connect(remote)
     const list = [
