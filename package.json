@@ -1,0 +1,17 @@
+{
+  "name": "old-ipfs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "node:a": "DEBUG=libp2p:* node ipfs-node-a.js",
+    "node:b": "DEBUG=libp2p:* node ipfs-node-b.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ipfs-core": "~0.5.2",
+    "ipfs-http-client": "~49.0.3",
+    "ipfs-http-server": "^0.5.0"
+  },
+  "description": ""
+}
