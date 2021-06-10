@@ -21,7 +21,7 @@ async function main() {
     const peers = await client.swarm.peers()
     const peerIds = peers.map(p => p.peer)
     console.log('peers', peerIds)
-    await new Promise(resolve => setTimeout(resolve, 100000))
+    // await new Promise(resolve => setTimeout(resolve, 100000))
 }
 
 main()

@@ -1,3 +1,4 @@
 node_modules/
 data-a/
 data-b/
+.vagrant/
