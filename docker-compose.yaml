@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  node-a:
+    build:
+      context: .
+      dockerfile: node-a.dockerfile
+    volumes:
+      - node-a:/data-a
+    ports:
+      - "4011:4011"
+      - "5011:5011"
+  node-b:
+    build:
+      context: .
+      dockerfile: node-b.dockerfile
+    volumes:
+      - node-b:/data-b
+    ports:
+      - "4012:4012"
+      - "5012:5012"
+
+volumes:
+  node-a:
+  node-b:
